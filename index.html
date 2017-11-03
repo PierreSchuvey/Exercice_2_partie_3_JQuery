@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label>Nombre de cliques : </label>
+    <input type="text" id="click" />
+    <button type="button" name="button" id="plus">+</button>
+    <button type="button" name="button" id="moins">-</button>
+  </form>
+  <script>
+  var nbClick = 0;
+  $('#plus').click(function(){
+    $('#click').val(nbClick = nbClick+1);
+  });
+  $('#moins').click(function(){
+    $('#click').val(nbClick = nbClick-1);
+  });
+  </script>
+</body>
+</html>
